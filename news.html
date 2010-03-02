@@ -3,7 +3,7 @@
 ---
 <h2>News</h2>
 {% for post in site.posts %}
-  <h3><a href="/PassStorage/{{ post.url }}">{{ post.title }}</a></h3>
+  <h3><a href="/PassStorage{{ post.url }}">{{ post.title }}</a></h3>
   {{ post.content }}
   <hr/>
 {% endfor %}
