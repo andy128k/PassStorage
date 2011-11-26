@@ -115,3 +115,9 @@ h3 * { color: #658761; }
 h4 { font-size: 1.3em; color: #658761; }
 hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 
+pre {
+  padding: 10px;
+  background: #FFE;
+  border: 1px dotted #658761;
+}
+
