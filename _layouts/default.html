@@ -1,127 +1,54 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="icon" type="image/png" href="/PassStorage/favicon.png" />
-    <link rel="alternate" href="http://andy128k.github.com/PassStorage/feed.atom" type="application/atom+xml"/>
-    <link rel="stylesheet" href="/PassStorage/css/reset.css" />
-    <link rel="stylesheet" href="/PassStorage/css/text.css" />
-    <link rel="stylesheet" href="/PassStorage/css/960.css" />
-
-    <title>PassStorage</title>
-    
-    <style type="text/css">
-      body {
-      margin-top: 1em;
-      margin-bottom: 1em;
-      background-color: #eee;
-      font-family: Helvetica, Arial, FreeSans; 
-      color: #000000;
-      }
-
-      #container {
-      margin: 0 auto;
-      border: 1px solid black;
-      background-color: white;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      }
-
-      #header {
-      margin-top: 1em;
-      background-color: #658761;
-      margin-bottom: 2em;
-      -moz-border-radius: 10px 10px 0 0;
-      -webkit-border-radius: 10px 10px 0 0;
-      }
-
-      #header * {
-      color: white;
-      }
-
-      #sidebar * {
-      color: #658761;
-      }
-
-      #sidebar ul {
-      list-style-type: none;
-      margin: 0;
-      }
-
-      #sidebar li {
-      margin: 0;
-      font-size: 1.5em;
-      }
-
-      #footer {
-      background-color: #658761;
-      margin-bottom: 10px;
-      text-align: center;
-      -moz-border-radius: 0 0 10px 10px;
-      -webkit-border-radius: 0 0 10px 10px;
-      }
-
-      #footer * {
-      margin: 4px;
-      color: white;
-      }
-
-      h1 { font-size: 3.8em; color: #000; margin: 10px; }
-      h1 a { text-decoration: none }
-
-      h2 { font-size: 2.5em; color: #658761; }
-      h3 { font-size: 1.5em; color: #658761; }
-      h3 * { color: #658761; }
-      h4 { font-size: 1.3em; color: #658761; }
-      hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    </style>
-    
-  </head>
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="icon" type="image/png" href="/PassStorage/favicon.png" />
+  <link rel="alternate" href="http://andy128k.github.com/PassStorage/feed.atom" type="application/atom+xml"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>PassStorage</title>
+</head>
 <body>
-  <!--a href="http://github.com/andy128k/PassStorage"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a-->
-  
-  <div id="container" class="container_12">
+<div id="container">
 
-    <div id="header" class="grid_12">
-      <img src="/PassStorage/icon.png" style="float: right; margin: 10px;"/>
-      <h1><a href="/PassStorage">PassStorage</a></h1>
-      <div style="font-size: 1.2em; font-style: italic; margin: 10px;">
-	Secure storage for your secrets
-      </div>
+  <div id="header">
+    <img src="/PassStorage/icon.png">
+    <h1><a href="/PassStorage/">PassStorage</a></h1>
+    <div id="motto">
+      Secure storage for your secrets
     </div>
-
-    <div class="clear"></div>
-    
-    <div id="sidebar" class="grid_3">
-      <ul>
-        <li><a href="/PassStorage/index.html">Home</a></li>
-        <li><a href="/PassStorage/news.html">News</a></li>
-        <li><a href="/PassStorage/screenshots.html">Screenshots</a></li>
-        <li><a href="http://github.com/andy128k/PassStorage">GitHub page</a></li>
-        <li><a href="http://github.com/andy128k/PassStorage/downloads">Downloads</a></li>
-        <li><a href="http://github.com/andy128k/PassStorage/issues">Issues</a></li>
-      </ul>
-
-      <div style="margin-top: 1em;">
-        <a href="http://feeds.feedburner.com/PassStorageNews" title="subscribe"><img src="/PassStorage/feed.png" alt="subscribe" /></a>
-      </div>
-    </div>
-
-    <div id="body" class="grid_9">
-      {{ content }}
-    </div>
-
-    <div class="clear"></div>
-
-    <div id="footer" class="grid_12">
-      <p>Andrey Kutejko <a href="mailto:andy128k@gmail.com">andy128k@gmail.com</a></p>
-    </div>
-
-    <div class="clear"></div>
   </div>
+
+  <div id="sidebar">
+    <ul>
+      <li><a href="/PassStorage/index.html">Home</a></li>
+      <li><a href="/PassStorage/news.html">News</a></li>
+      <li><a href="/PassStorage/screenshots.html">Screenshots</a></li>
+      <li><a href="http://github.com/andy128k/PassStorage">GitHub page</a></li>
+      <li><a href="http://github.com/andy128k/PassStorage/downloads">Downloads</a></li>
+      <li><a href="http://github.com/andy128k/PassStorage/issues">Issues</a></li>
+    </ul>
+
+    <div style="margin-top: 1em;">
+      <a href="http://feeds.feedburner.com/PassStorageNews" title="subscribe"><img src="/PassStorage/feed.png" alt="subscribe" /></a>
+    </div>
+  </div>
+
+  <div id="body">
+    {{ content }}
+  </div>
+
+  <div id="buttons">
+    <a href="http://lisper.ru/" title="Made with secret alien technology"><img src="/PassStorage/images/alien.png" alt="Made with secret alien technology"></a>
+    <a href="http://www.sbcl.org/" title="SBCL"><img src="/PassStorage/images/sbclbutton.png" alt="SBCL"></a>
+    <a href="http://www.gtk.org/" title="GTK+"><img src="/PassStorage/images/gtk.png" alt="GTK+"></a>
+    <a href="http://github.com/" title="GitHub"><img src="/PassStorage/images/github.png" alt="GitHub"></a>
+  </div>
+
+  <div id="footer">
+    Andrey Kutejko <a href="mailto:andy128k@gmail.com">andy128k@gmail.com</a>
+  </div>
+
+</div>
 </body>
 </html>
 
