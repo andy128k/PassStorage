@@ -92,6 +92,20 @@ body {
   border: 0;
 }
 
+#awards {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+#awards a {
+  margin: 0 20px;
+}
+
+#awards img {
+  border: 0;
+  vertical-align: middle;
+}
+
 #footer {
   clear: both;
   background-color: #658761;
