@@ -13,16 +13,35 @@ ul{list-style:disc}
 li{margin-left:30px}
 p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:20px}
 
+html,body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow: auto;
+}
+
 body {
-  margin: 20px 0;
   background-color: #eee;
   font: 13px/1.5 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;
   color: #000000;
 }
 
 #container {
-  margin: 0 auto;
   width: 960px;
+  margin: 20px auto;
+  min-height: calc(100vh - 60px - 2px);
+  padding: 10px;
+
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar body"
+    "footer footer";
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 0fr 1fr 0fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
   border: 1px solid #666;
   background-color: white;
   border-radius: 10px;
@@ -30,7 +49,7 @@ body {
 }
 
 #header {
-  margin: 10px 10px 20px;
+  grid-area: header;
   background-color: #658761;
   border-radius: 10px 10px 0 0;
 }
@@ -55,9 +74,7 @@ body {
 }
 
 #sidebar {
-  width: 220px;
-  padding: 0 10px;
-  float: left;
+  grid-area: sidebar;
 }
 
 #sidebar * {
@@ -75,47 +92,19 @@ body {
 }
 
 #body {
-  width: 710px;
-  margin: 0 10px 0 240px;
-}
-
-#buttons {
-  margin: 20px 0 0;
-  text-align: center;
-}
-
-#buttons a {
-  margin: 0 20px;
-}
-
-#buttons img {
-  border: 0;
-}
-
-#awards {
-  text-align: center;
-  margin: 40px 0 20px;
-}
-
-#awards a {
-  margin: 0 20px;
-}
-
-#awards img {
-  border: 0;
-  vertical-align: middle;
+  grid-area: body;
 }
 
 #footer {
-  clear: both;
+  grid-area: footer;
   background-color: #658761;
   text-align: center;
-  margin: 10px;
   padding: 5px 0;
   border-radius: 0 0 10px 10px;
+  color: #eee;
 }
 
-#footer * {
+#footer a {
   margin: 4px;
   color: white;
 }
@@ -134,4 +123,3 @@ pre {
   background: #FFE;
   border: 1px dotted #658761;
 }
-

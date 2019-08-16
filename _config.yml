@@ -1,13 +1,8 @@
 destination: ./_site
+baseurl:     '/PassStorage/'
 auto:        false
 lsi:         false
-server_port: 4000
-pygments:    false
-markdown:    maruku
+port:        4000
+highlighter: false
+markdown:    kramdown
 permalink:   date
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_dir:    images/latex
-  png_url:    /images/latex
-
