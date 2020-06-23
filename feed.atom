@@ -3,14 +3,14 @@ layout: nil
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- <id>http://andy128k.github.com/PassStorage</id>
+ <id>http://andy128k.github.com/password-storage</id>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  
- <title type="text">PassStorage News</title>
+ <title type="text">PasswordStorage News</title>
  <subtitle type="text">Secure storage for your secrets</subtitle>
  
- <link rel="self" href="http://andy128k.github.com/PassStorage/feed.atom" type="application/atom+xml"/>
- <link rel="alternate" type="text/html" href="http://andy128k.github.com/PassStorage/news.html"/>
+ <link rel="self" href="http://andy128k.github.com/password-storage/feed.atom" type="application/atom+xml"/>
+ <link rel="alternate" type="text/html" href="http://andy128k.github.com/password-storage/news.html"/>
    
  <author>
    <name>Andrey Kutejko</name>
@@ -22,14 +22,14 @@ layout: nil
 
  {% for post in site.posts limit: 15 %}
  <entry>
-   <id>http://andy128k.github.com/PassStorage/{{ post.id }}</id>
+   <id>http://andy128k.github.com/password-storage/{{ post.id }}</id>
    <published>{{ post.date | date_to_xmlschema }}</published>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
        
    <title type="text">{{ post.title }}</title>
    <content type="html">{{ post.content | xml_escape }}</content>
    
-   <link rel="alternate" href="http://andy128k.github.com/PassStorage/{{ post.url }}" type="text/html"/>
+   <link rel="alternate" href="http://andy128k.github.com/password-storage/{{ post.url }}" type="text/html"/>
    
    <author>
      <name>Andrey Kutejko</name>

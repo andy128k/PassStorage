@@ -1,5 +1,5 @@
 destination: ./_site
-baseurl:     '/PassStorage/'
+baseurl:     '/password-storage/'
 auto:        false
 lsi:         false
 port:        4000

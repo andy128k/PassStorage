@@ -3,7 +3,7 @@ layout: default
 title: News
 ---
 {% for post in site.posts %}
-  <h3><a href="/PassStorage{{ post.url }}">{{ post.title }}</a></h3>
+  <h3><a href="/password-storage{{ post.url }}">{{ post.title }}</a></h3>
   {{ post.content }}
   <hr/>
 {% endfor %}
