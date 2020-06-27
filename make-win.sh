@@ -15,7 +15,7 @@ then
     exit
 fi
 
-URL='http://andy128k.github.com/PassStorage'
+URL='http://andy128k.github.com/password-storage'
 
 PREFIX=C:\\projects\\PassStorage
 

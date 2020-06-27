@@ -5,9 +5,9 @@
 AppName=PassStorage
 AppVerName=PassStorage 0.10.2.8
 AppPublisher=Andrey Kutejko
-AppPublisherURL=http://andy128k.github.com/PassStorage
-AppSupportURL=http://andy128k.github.com/PassStorage
-AppUpdatesURL=http://andy128k.github.com/PassStorage
+AppPublisherURL=http://andy128k.github.com/password-storage
+AppSupportURL=http://andy128k.github.com/password-storage
+AppUpdatesURL=http://andy128k.github.com/password-storage
 DefaultDirName={pf}\PassStorage
 DisableDirPage=yes
 DisableProgramGroupPage=yes
