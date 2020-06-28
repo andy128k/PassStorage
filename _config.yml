@@ -1,8 +1,0 @@
-destination: ./_site
-baseurl:     '/password-storage/'
-auto:        false
-lsi:         false
-port:        4000
-highlighter: false
-markdown:    kramdown
-permalink:   date

@@ -1,41 +1,340 @@
----
-layout: nil
----
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- <id>http://andy128k.github.com/password-storage</id>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- 
- <title type="text">PasswordStorage News</title>
- <subtitle type="text">Secure storage for your secrets</subtitle>
- 
- <link rel="self" href="http://andy128k.github.com/password-storage/feed.atom" type="application/atom+xml"/>
- <link rel="alternate" type="text/html" href="http://andy128k.github.com/password-storage/news.html"/>
-   
- <author>
-   <name>Andrey Kutejko</name>
-   <uri>http://github.com/andy128k</uri>
-   <email>andy128k@gmail.com</email>
- </author>
- 
- <generator version="0.5" uri="http://github.com/jberkel/jekyl">Jekyll</generator>
+  <id>http://andy128k.github.com/password-storage</id>
+  <updated>2020-06-28T16:14:57+0000</updated>
 
- {% for post in site.posts limit: 15 %}
- <entry>
-   <id>http://andy128k.github.com/password-storage/{{ post.id }}</id>
-   <published>{{ post.date | date_to_xmlschema }}</published>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-       
-   <title type="text">{{ post.title }}</title>
-   <content type="html">{{ post.content | xml_escape }}</content>
-   
-   <link rel="alternate" href="http://andy128k.github.com/password-storage/{{ post.url }}" type="text/html"/>
-   
-   <author>
-     <name>Andrey Kutejko</name>
-     <uri>http://github.com/andy128k</uri>
-     <email>andy128k@gmail.com</email>
-   </author>
- </entry>
- {% endfor %}
+  <title type="text">PasswordStorage News</title>
+  <subtitle type="text">Secure storage for your secrets</subtitle>
+
+  <link rel="self" href="http://andy128k.github.com/password-storage/feed.atom" type="application/atom+xml"/>
+  <link rel="alternate" type="text/html" href="http://andy128k.github.com/password-storage/news.html"/>
+
+  <author>
+    <name>Andrey Kutejko</name>
+    <uri>http://github.com/andy128k</uri>
+    <email>andy128k@gmail.com</email>
+  </author>
+
+  
+  <entry>
+    <id>/password-storage/2010/02/08/version-0.10.2.8.html</id>
+    <published>2010-02-08T00:00:00+0000</published>
+    <updated>2010-02-08T00:00:00+0000</updated>
+
+    <title type="text">Version 0.10.2.8</title>
+    <content type="html">&lt;p&gt;PassStorage version 0.10.2.8 is ready to download.&lt;br/&gt;
+
+&lt;h4&gt;Release notes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Ctrl-F makes search entry focused.&lt;/li&gt;
+&lt;li&gt;You have more than one try to enter password when you open file.&lt;/li&gt;
+&lt;li&gt;Buggy zlib implementation is replaced by self-written zlib wrapper (cl-z).&lt;/li&gt;
+&lt;li&gt;Clipboard is cleared at exit.&lt;/li&gt;
+&lt;li&gt;All folders are expanded when search filter is applied.&lt;/li&gt;
+&lt;li&gt;Search in secrets (passwords) is optional now.&lt;/li&gt;
+&lt;li&gt;About dialog is added.&lt;/li&gt;
+&lt;li&gt;Windows setup is less annoying now. Setup wizard has minimal amount of steps.&lt;/li&gt;
+&lt;li&gt;No stupid folders in Windows menu.&lt;/li&gt;
+&lt;li&gt;Wimp theme is turned on by default.&lt;/li&gt;
+&lt;li&gt;Now versions are based on release date: “0.year.month.day”.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+
+    <link rel="alternate" href="/password-storage/2010/02/08/version-0.10.2.8.html" type="text/html"/>
+
+    <author>
+      <name>Andrey Kutejko</name>
+      <uri>http://github.com/andy128k</uri>
+      <email>andy128k@gmail.com</email>
+    </author>
+  </entry>
+  
+  <entry>
+    <id>/password-storage/2010/02/22/version-0.10.2.22.html</id>
+    <published>2010-02-22T00:00:00+0000</published>
+    <updated>2010-02-22T00:00:00+0000</updated>
+
+    <title type="text">Version 0.10.2.22</title>
+    <content type="html">&lt;h4&gt;Release notes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Folder nodes are collapsed when filter is reset.&lt;/li&gt;
+&lt;li&gt;Drag’n’drop sorting is working again. Filter has to be reset.&lt;/li&gt;
+&lt;li&gt;Password generator is added.&lt;/li&gt;
+&lt;li&gt;Status bar is added.&lt;/li&gt;
+&lt;li&gt;Ability to change password is added.&lt;/li&gt;
+&lt;li&gt;Type converision is added. Now you can convert entry to any other type.&lt;/li&gt;
+&lt;li&gt;Context popup menu is added.&lt;/li&gt;
+&lt;li&gt;Error causing data corruption (rarely) is fixed;&lt;/li&gt;
+&lt;li&gt;Binary packages for debian-based OSes.&lt;/li&gt;
+&lt;li&gt;a load of minor fixes...&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+
+    <link rel="alternate" href="/password-storage/2010/02/22/version-0.10.2.22.html" type="text/html"/>
+
+    <author>
+      <name>Andrey Kutejko</name>
+      <uri>http://github.com/andy128k</uri>
+      <email>andy128k@gmail.com</email>
+    </author>
+  </entry>
+  
+  <entry>
+    <id>/password-storage/2010/03/03/version-0.10.3.3.html</id>
+    <published>2010-03-03T00:00:00+0000</published>
+    <updated>2010-03-03T00:00:00+0000</updated>
+
+    <title type="text">Version 0.10.3.3</title>
+    <content type="html">&lt;h4&gt;Release notes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Accelerators are shown in popup menu.&lt;/li&gt;
+&lt;li&gt;Now messages windows have titles.&lt;/li&gt;
+&lt;li&gt;Converting entries doesn&#39;t add empty values to description field.&lt;/li&gt;
+&lt;li&gt;File can be passed through command line.&lt;/li&gt;
+&lt;li&gt;Added entry becomes selected in main window.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+
+    <link rel="alternate" href="/password-storage/2010/03/03/version-0.10.3.3.html" type="text/html"/>
+
+    <author>
+      <name>Andrey Kutejko</name>
+      <uri>http://github.com/andy128k</uri>
+      <email>andy128k@gmail.com</email>
+    </author>
+  </entry>
+  
+  <entry>
+    <id>/password-storage/2010/05/20/version-0.10.5.20.html</id>
+    <published>2010-05-20T00:00:00+0000</published>
+    <updated>2010-05-20T00:00:00+0000</updated>
+
+    <title type="text">Version 0.10.5.20</title>
+    <content type="html">&lt;h4&gt;Release notes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Added preview panel.&lt;/li&gt;
+&lt;li&gt;Added file merging.&lt;/li&gt;
+&lt;li&gt;Default theme is Clearlooks now. Wimp caused errors.&lt;/li&gt;
+&lt;li&gt;Switching to GTK+ 2.20.&lt;/li&gt;
+&lt;li&gt;Minor fixes.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+
+    <link rel="alternate" href="/password-storage/2010/05/20/version-0.10.5.20.html" type="text/html"/>
+
+    <author>
+      <name>Andrey Kutejko</name>
+      <uri>http://github.com/andy128k</uri>
+      <email>andy128k@gmail.com</email>
+    </author>
+  </entry>
+  
+  <entry>
+    <id>/password-storage/2010/06/28/version-0.10.6.28.html</id>
+    <published>2010-06-28T00:00:00+0000</published>
+    <updated>2010-06-28T00:00:00+0000</updated>
+
+    <title type="text">Version 0.10.6.28</title>
+    <content type="html">&lt;h4&gt;Release notes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Search entry is focused by default now.&lt;/li&gt;
+&lt;li&gt;Hyperlinks work on Windows.&lt;/li&gt;
+&lt;li&gt;Passwords are not shown on preview panel by default. This is configurable now.&lt;/li&gt;
+&lt;li&gt;Switching to GTK+ 2.18.&lt;/li&gt;
+&lt;li&gt;Added merge mode.&lt;/li&gt;
+&lt;li&gt;Added two methods of merging files.&lt;/li&gt;
+&lt;li&gt;Minor fixes.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+
+    <link rel="alternate" href="/password-storage/2010/06/28/version-0.10.6.28.html" type="text/html"/>
+
+    <author>
+      <name>Andrey Kutejko</name>
+      <uri>http://github.com/andy128k</uri>
+      <email>andy128k@gmail.com</email>
+    </author>
+  </entry>
+  
+  <entry>
+    <id>/password-storage/2011/03/10/version-0.11.3.10.html</id>
+    <published>2011-03-10T00:00:00+0000</published>
+    <updated>2011-03-10T00:00:00+0000</updated>
+
+    <title type="text">Version 0.11.3.10</title>
+    <content type="html">&lt;h4&gt;Release notes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Search widget is moved to toolbar. It also takes input focus at startup.&lt;/li&gt;
+&lt;li&gt;Search filter is smarter. Matched group shows all entries.&lt;/li&gt;
+&lt;li&gt;New Debian/Ubuntu package revelation-mime which allows to remove revelation and still have file associations, icons and registered mime-type.
+  Just install revelation-mime and remove revelation.&lt;/li&gt;
+&lt;li&gt;Debian/Ubuntu packages now use lzma compression. Packages are 30% smaller now.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+
+    <link rel="alternate" href="/password-storage/2011/03/10/version-0.11.3.10.html" type="text/html"/>
+
+    <author>
+      <name>Andrey Kutejko</name>
+      <uri>http://github.com/andy128k</uri>
+      <email>andy128k@gmail.com</email>
+    </author>
+  </entry>
+  
+  <entry>
+    <id>/password-storage/2011/11/26/version-0.11.11.26.html</id>
+    <published>2011-11-26T00:00:00+0000</published>
+    <updated>2011-11-26T00:00:00+0000</updated>
+
+    <title type="text">Version 0.11.11.26</title>
+    <content type="html">&lt;h4&gt;Release notes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Status icon is added.&lt;/li&gt;
+&lt;li&gt;Autocompletion for names is added.&lt;/li&gt;
+&lt;li&gt;New compression feature of SBCL is used. Now binary is much smaller.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/andy128k/password-storage/releases/tag/0.11.11.26&#34;&gt;Downloads&lt;/a&gt;&lt;/p&gt;
+</content>
+
+    <link rel="alternate" href="/password-storage/2011/11/26/version-0.11.11.26.html" type="text/html"/>
+
+    <author>
+      <name>Andrey Kutejko</name>
+      <uri>http://github.com/andy128k</uri>
+      <email>andy128k@gmail.com</email>
+    </author>
+  </entry>
+  
+  <entry>
+    <id>/password-storage/2019/03/24/version-0.17.2.html</id>
+    <published>2019-03-24T00:00:00+0000</published>
+    <updated>2019-03-24T00:00:00+0000</updated>
+
+    <title type="text">Version 0.17.2</title>
+    <content type="html">&lt;h4&gt;Release notes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;First automated release on GitHub.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/andy128k/password-storage/releases/0.17.2&#34;&gt;Downloads&lt;/a&gt;&lt;/p&gt;
+</content>
+
+    <link rel="alternate" href="/password-storage/2019/03/24/version-0.17.2.html" type="text/html"/>
+
+    <author>
+      <name>Andrey Kutejko</name>
+      <uri>http://github.com/andy128k</uri>
+      <email>andy128k@gmail.com</email>
+    </author>
+  </entry>
+  
+  <entry>
+    <id>/password-storage/2019/08/16/version-0.17.3.html</id>
+    <published>2019-08-16T00:00:00+0000</published>
+    <updated>2019-08-16T00:00:00+0000</updated>
+
+    <title type="text">Version 0.17.3</title>
+    <content type="html">&lt;h4&gt;Release notes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Change layout of entry form. Now description is the last field.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/andy128k/password-storage/releases/0.17.3&#34;&gt;Downloads&lt;/a&gt;&lt;/p&gt;
+</content>
+
+    <link rel="alternate" href="/password-storage/2019/08/16/version-0.17.3.html" type="text/html"/>
+
+    <author>
+      <name>Andrey Kutejko</name>
+      <uri>http://github.com/andy128k</uri>
+      <email>andy128k@gmail.com</email>
+    </author>
+  </entry>
+  
+  <entry>
+    <id>/password-storage/2019/09/12/version-0.17.4.html</id>
+    <published>2019-09-12T00:00:00+0000</published>
+    <updated>2019-09-12T00:00:00+0000</updated>
+
+    <title type="text">Version 0.17.4</title>
+    <content type="html">&lt;h4&gt;Release notes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Clear search text when file is closed (or other is opened/created).&lt;/li&gt;
+&lt;li&gt;Proper separators on preview panel.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/andy128k/password-storage/releases/0.17.4&#34;&gt;Downloads&lt;/a&gt;&lt;/p&gt;
+</content>
+
+    <link rel="alternate" href="/password-storage/2019/09/12/version-0.17.4.html" type="text/html"/>
+
+    <author>
+      <name>Andrey Kutejko</name>
+      <uri>http://github.com/andy128k</uri>
+      <email>andy128k@gmail.com</email>
+    </author>
+  </entry>
+  
+  <entry>
+    <id>/password-storage/2019/10/25/version-0.17.5.html</id>
+    <published>2019-10-25T00:00:00+0000</published>
+    <updated>2019-10-25T00:00:00+0000</updated>
+
+    <title type="text">Version 0.17.5</title>
+    <content type="html">Version 0.17.5 is released.
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/andy128k/password-storage/releases/0.17.5&#34;&gt;Downloads&lt;/a&gt;&lt;/p&gt;
+</content>
+
+    <link rel="alternate" href="/password-storage/2019/10/25/version-0.17.5.html" type="text/html"/>
+
+    <author>
+      <name>Andrey Kutejko</name>
+      <uri>http://github.com/andy128k</uri>
+      <email>andy128k@gmail.com</email>
+    </author>
+  </entry>
+  
+  <entry>
+    <id>/password-storage/2020/06/20/version-0.18.0.html</id>
+    <published>2020-06-20T00:00:00+0000</published>
+    <updated>2020-06-20T00:00:00+0000</updated>
+
+    <title type="text">Version 0.18.0</title>
+    <content type="html">Version 0.18.0 is released.
+
+&lt;!-- &lt;h4&gt;Release notes&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Change layout of entry form. Now description is the last field.&lt;/li&gt;
+&lt;/ul&gt; --&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/andy128k/password-storage/releases/0.18.0&#34;&gt;Downloads&lt;/a&gt;&lt;/p&gt;
+</content>
+
+    <link rel="alternate" href="/password-storage/2020/06/20/version-0.18.0.html" type="text/html"/>
+
+    <author>
+      <name>Andrey Kutejko</name>
+      <uri>http://github.com/andy128k</uri>
+      <email>andy128k@gmail.com</email>
+    </author>
+  </entry>
+  
 </feed>
